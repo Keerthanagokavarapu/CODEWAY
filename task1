@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #home{
+                background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20231027/pngtree-hexagonal-abstract-background-with-a-black-textured-surface-image_13704307.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                height: 90vh;
+            }
+            #h1{
+                color: white;
+                position: absolute;
+                top:180px ;
+                left: 300px;
+            }
+            #h2{
+                color: white;
+                position: absolute;
+                top: 210px;
+                left: 300px;
+            }
+            #i1{
+                position: absolute;
+                top: 300px;
+                left: 400px;
+            }
+            #about{
+                background-image: url(https://images.unsplash.com/photo-1618022325802-7e5e732d97a1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D);
+                height: 100vh;
+            }
+            #d1{
+                height: 500px;
+                width: 700px;
+                background-color: lavender;
+                position: relative;
+                top: 100px;
+                left: 350px;
+            }
+            h3{
+                color: purple;
+                position: relative;
+                top: 20px;
+                left: 20px;
+            }
+            #me{
+                position: relative;
+                top: 120px;
+                left: 50px;
+                color: #b85d9c;
+            }
+            li{
+                color: #b85d9c;
+                position: relative;
+                left: 2px;
+            }
+            #ex{
+                position: absolute;
+                top: 50px;
+                left: 320px;
+            }
+            #p{
+                color: #b85d9c;
+                position: absolute;
+                top: 80px;
+                left: 320px;
+                font-size: 20px;
+            }
+            #ski{
+                position: relative;
+                top: 140px;
+                left: 100px;
+            }
+            #pro{
+                background-image: url(data:image/jpeg;base64,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);
+                height: 120vh;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            #proj{
+                height: 680px;
+                width: 900px;
+                background-color: lavender;
+                margin-left: 250px;
+                margin-top: 10px;
+                position: relative;
+                top: 30px;
+            }
+            h2{
+                color: purple;
+            }
+            #i2{
+                height: 190px;
+                width: 250px;
+                position: relative;
+                left: 300px;
+            }
+            #p1{
+                color: #b85d9c;
+                font-size: 17px;
+            }
+            #cont{
+                background-image: url(https://media.istockphoto.com/id/1346213885/vector/abstract-dark-black-papercut-geometric-background-modern-futuristic-background-can-be-use.jpg?s=612x612&w=0&k=20&c=MOY5fecb8dz-ITXtc4U0gr-4Ku9luNV7Bbgu2874_o8=);
+                height: 700px;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            #contact{
+                height: 500px;
+                width: 600px;
+                background-color: lavender;
+                position: relative;
+                top: 50px;
+                left: 350px;
+            }
+            label{
+                color: #b85d9c;
+                position: relative;
+                left: 20px;
+            }
+            #i3{
+                height: 30px;
+                width: 30px;
+                margin-left: 10px;
+            }
+            #sp1{
+                color: #b85d9c;
+                margin-left: 15px;
+            }
+            #i4{
+                height: 25px;
+                width: 25px;
+                position: relative;
+                top: 80px;
+                left: 40px;
+            }
+            #i5{
+                height: 10px;
+                width: 10px;
+                position: relative;
+                bottom: 3px;
+            }
+            #sp2{
+                position: relative;
+                top: 73px;
+                left: 50px;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="home">
+            <h1 id="h1">Hi!</h1>
+            <h1 id="h2"> I am Keerthana Gokavarapu</h1>
+            <img id="i1" src="https://cdn-icons-png.flaticon.com/128/6997/6997668.png">
+        </div>
+        <div id="about">
+            <div id="d1">
+                <div id="me">
+                    <ul>Name : Keerthana Gokavarapu</ul>
+                    <ul>Profile : Web Developer</ul>
+                    <ul>Address : Ambajipeta</ul>
+                    <ul>Phone : 8074349274</ul>
+                </div>
+                <div id="ski">
+                <h3 id="sk"><u>SKILLS</u></h3>
+                <li>HTML/CSS</li>
+                <li>Python</li>
+                <li>Basic Javascript</li>
+                <li>SQL</li>
+                <li>C</li>
+                <li>Java</li>
+            </div>
+                <h3 id="ex"><u>About me</u></h3>
+                <div id="p">
+                <p> I am enthusiastic,self-motivated, reliable, responsible and hard-working person. I am mature team worker and adaptable to al challenging situations. I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines.</p>
+                <p>I have an internship under<u> ACADEMOR as a front end web developer</u>. I have done <u>weather application</u> as a mini project. I am looking forward to gain more experience in this field.</p>
+            </div>
+            </div>
+            </div>
+            <div id="pro">
+                <div id="proj">
+                    <h2><u>Projects</u></h2>
+                    <p id="p1">I had done this internship under academor as a front-end web developer.I had done weather application as project for internship.</p>
+                    <p id="p1">I had used HTML,CSS to design the front end of the project and I used Basic Javascript for designing the functionality of the application.</p>
+                    <img id="i2" src="C:\Users\KEERTHANA\OneDrive\Pictures\Screenshots\Screenshot (985).png">
+                    <p id="p1"> The working of the project will bw, when we enter a city name we can see the temperature of the current day and temperature for succeeding five days.Not only temperature we also see the current wind and humidity and succeeding 5 days weather report for wind and humidity.</p>
+                    <img id="i2" src="C:\Users\KEERTHANA\OneDrive\Pictures\Screenshots\Screenshot (993).png">
+                    <p id="p1">In the above picture we can see the current weather report for Delhi and succeeding 5 days weather reports.</p>
+                </div>
+            </div>
+            <div id="cont">
+                <div id="contact">
+                    <h2><u>Contact Me</u></h2>
+                    <label>Name : Keerthana Gokavarapu</label><br>
+                    <label>Phone : 8074349274</label><br>
+                    <label>G-Mail : 21pa1a1233@vishnu.edu.in</label><br>
+                    <label>Linkedin : <a href="www.linkedin.com/in/gokavarapu-keerthana-74b6212b2">www.linkedin.com/in/gokavarapu-keerthana-74b6212b2</a></label><br>
+                <br>
+                <h2 id="co"><u>Connect with me</u></h2>
+                <div id="image">
+                    <img id="i3" src="https://cdn-icons-png.flaticon.com/128/14845/14845724.png">
+                    <img id="i3" src="https://cdn-icons-png.flaticon.com/128/1409/1409946.png">
+                    <img id="i3" src="https://cdn-icons-png.flaticon.com/128/2504/2504923.png">
+                </div>
+                <br>
+                <h2 id="dow"><u>Download</u></h2>
+                <span id="sp1">Download <a href="https://jumpshare.com/s/I9bPuqnjhZ5116D4XBmZ">my resume</a></span><br>
+                <img id="i4" src="https://cdn-icons-png.flaticon.com/128/3502/3502463.png"><b><span id="sp2">Copyright<img id="i5" src="https://cdn-icons-png.flaticon.com/128/74/74717.png"> All rights preserved to Keerthana Gokavarapu</span></b>
+                </div>
+            </div>
+    </body>
+</html>
